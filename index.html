@@ -300,12 +300,14 @@ button:hover {
     right: 0%; /* Moves the pseudo-element from left to right */
 }  
     @media screen and (max-width:400px) {
-      nav {
+      nav li {
         flex-direction: column;
+          float:none;
       }
 
-      nav a {
-        padding: 0.5rem;
+      nav li a {
+        display:block;
+          text-align:center;
       }
         .box{
             flex-direction: column;
