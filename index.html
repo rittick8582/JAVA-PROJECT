@@ -57,7 +57,19 @@ nav ul li a {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
+@media screen and (max-width:400px) {
+      nav ul li {
+        flex-direction: column;
+          float:none;
+      }
 
+      nav ul li a {
+        display:block;
+          text-align:center;
+      }
+        .box{
+            flex-direction: column;
+        }
 /* Hover effects */
 nav ul li a:hover {
     background-color: #f39c12; /* Yellow color on hover */
@@ -299,19 +311,7 @@ button:hover {
 .box:hover::before {
     right: 0%; /* Moves the pseudo-element from left to right */
 }  
-    @media screen and (max-width:400px) {
-      nav li {
-        flex-direction: column;
-          float:none;
-      }
-
-      nav li a {
-        display:block;
-          text-align:center;
-      }
-        .box{
-            flex-direction: column;
-        }
+    
     </style>
 </head>
 <body>
